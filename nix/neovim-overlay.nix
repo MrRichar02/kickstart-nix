@@ -49,6 +49,7 @@ with final.pkgs.lib; let
     # cmp-nvim-lua # neovim lua API as completion source | https://github.com/hrsh7th/cmp-nvim-lua/
     # cmp-cmdline # cmp command line suggestions
     # cmp-cmdline-history # cmp command line history suggestions
+		blink-cmp
     # ^ nvim-cmp extensions
 
     # git integration plugins
@@ -100,6 +101,7 @@ with final.pkgs.lib; let
 
   extraPackages = with pkgs; [
     # language servers, etc.
+		vscode-langservers-extracted
     lua-language-server
     jdt-language-server
     basedpyright
