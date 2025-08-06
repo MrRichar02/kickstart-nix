@@ -4,9 +4,7 @@ vim.lsp.enable({
 	'nixd',
 	'jdtls',
 	'basedpyright',
-	'superhtml',
-	-- 'html',
-	-- 'htmlls',
+	'emmet_ls',
 })
 
 -- diagnostics config for lsps

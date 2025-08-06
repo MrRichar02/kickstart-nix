@@ -101,7 +101,7 @@ with final.pkgs.lib; let
 
   extraPackages = with pkgs; [
     # language servers, etc.
-		vscode-langservers-extracted
+		emmet-ls
     lua-language-server
     jdt-language-server
     basedpyright
