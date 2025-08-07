@@ -108,6 +108,8 @@ with final.pkgs.lib; let
     # nil # nix LSP
     nixd
     alejandra
+		#For telescope
+		ripgrep
   ];
 in {
   # This is the neovim derivation
