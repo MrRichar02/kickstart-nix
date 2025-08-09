@@ -65,6 +65,9 @@ with final.pkgs.lib; let
     # telescope-smart-history-nvim # https://github.com/nvim-telescope/telescope-smart-history.nvim
     # ^ telescope and extensions
 
+		# utilities
+		oil-nvim
+
     # UI
     catppuccin-nvim
     lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
