@@ -5,6 +5,7 @@ vim.lsp.enable({
 	'jdtls',
 	'basedpyright',
 	'emmet_ls',
+	'gopls',
 })
 
 -- diagnostics config for lsps

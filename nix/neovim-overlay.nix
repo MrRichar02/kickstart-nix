@@ -16,8 +16,8 @@ with final.pkgs.lib; let
 
   # This is the helper function that builds the Neovim derivation.
   mkNeovim = pkgs.callPackage ./mkNeovim.nix {
-      inherit (pkgs-locked) wrapNeovimUnstable neovimUtils;
-    };
+    inherit (pkgs-locked) wrapNeovimUnstable neovimUtils;
+  };
 
   # A plugin can either be a package or an attrset, such as
   # { plugin = <plugin>; # the package, e.g. pkgs.vimPlugins.nvim-cmp
@@ -49,7 +49,7 @@ with final.pkgs.lib; let
     # cmp-nvim-lua # neovim lua API as completion source | https://github.com/hrsh7th/cmp-nvim-lua/
     # cmp-cmdline # cmp command line suggestions
     # cmp-cmdline-history # cmp command line history suggestions
-		blink-cmp
+    blink-cmp
     # ^ nvim-cmp extensions
 
     # git integration plugins
@@ -65,8 +65,8 @@ with final.pkgs.lib; let
     # telescope-smart-history-nvim # https://github.com/nvim-telescope/telescope-smart-history.nvim
     # ^ telescope and extensions
 
-		# utilities
-		oil-nvim
+    # utilities
+    oil-nvim
 
     # UI
     catppuccin-nvim
@@ -104,15 +104,18 @@ with final.pkgs.lib; let
 
   extraPackages = with pkgs; [
     # language servers, etc.
-		emmet-ls
+    emmet-ls
     lua-language-server
     jdt-language-server
     basedpyright
+		gopls
+
     # nil # nix LSP
     nixd
     alejandra
-		#For telescope
-		ripgrep
+
+    #For telescope
+    ripgrep
   ];
 in {
   # This is the neovim derivation
