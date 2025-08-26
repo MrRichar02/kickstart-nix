@@ -67,6 +67,7 @@ with final.pkgs.lib; let
 
     # utilities
     oil-nvim
+		nvim-colorizer-lua
 
     # UI
     catppuccin-nvim
