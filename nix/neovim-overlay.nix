@@ -111,7 +111,6 @@ with final.pkgs.lib; let
     lua-language-server
     jdt-language-server
     basedpyright
-		gopls
 
     # nil # nix LSP
     nixd
