@@ -73,7 +73,7 @@ with final.pkgs.lib; let
 
     # UI
     catppuccin-nvim
-    lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
+    # lualine-nvim # Status line | https://github.com/nvim-lualine/lualine.nvim/
     # nvim-navic # Add LSP location to lualine | https://github.com/SmiteshP/nvim-navic
     # statuscol-nvim # Status column | https://github.com/luukvbaal/statuscol.nvim/
     # ^ UI
